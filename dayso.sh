@@ -31,13 +31,13 @@
 				then
 				tam=$((${a[i]}))
 				$((${a[i]}))=$((${a[j]}))
-				$((${a[j]}))=tam
+				${a[j]}=$tam
 				fi
 			done
 	done
 	for ((j=0; j<n; j++))
 			do
-				echo "a[$j]= " ${a[$j]}
+				echo "a[$j]= " ${a[j]}
 			done
 
 
