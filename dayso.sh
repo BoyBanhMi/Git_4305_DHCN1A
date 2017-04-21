@@ -29,8 +29,8 @@
 			do
 				if [${a[i]} -gt ${a[j]}]
 				then
-				tam=$((${a[i]}))
-				$((${a[i]}))=$((${a[j]}))
+				tam=${a[i]}
+				${a[i]}=${a[j]}
 				${a[j]}=$tam
 				fi
 			done
